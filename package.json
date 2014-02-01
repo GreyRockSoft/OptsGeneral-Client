@@ -1,0 +1,25 @@
+{
+  "name": "OptsGeneral",
+  "version": "0.0.1",
+  "description": "Automating dev opts with node.",
+  "main": "service.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GreyRockSoft/OptsGeneral.git"
+  },
+  "author": "Ryan Moore",
+  "license": "Apache 2",
+  "bugs": {
+    "url": "https://github.com/GreyRockSoft/OptsGeneral/issues"
+  },
+  "homepage": "https://github.com/GreyRockSoft/OptsGeneral", 
+  "dependencies": {
+    "hapi": "2.1.2"
+  },
+  "devDependencies": {
+    "nodeunit": "0.8.4"  
+  } 
+}
