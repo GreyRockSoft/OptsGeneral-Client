@@ -1,0 +1,5 @@
+#!/usr/bin/env node
+
+var optsGeneral = require('../');
+
+console.log(JSON.stringify(optsGeneral.info(), null, 2));
