@@ -2,4 +2,5 @@
 
 var optsGeneral = require('../');
 
-console.log(JSON.stringify(optsGeneral.info(), null, 2));
+
+console.log(JSON.stringify(optsGeneral.info.serverInfo(), null, 2));
