@@ -15,11 +15,12 @@
   "bugs": {
     "url": "https://github.com/GreyRockSoft/OptsGeneral/issues"
   },
-  "homepage": "https://github.com/GreyRockSoft/OptsGeneral", 
+  "homepage": "https://github.com/GreyRockSoft/OptsGeneral",
   "dependencies": {
-    "hapi": "2.1.2"
+    "hapi": "2.1.2",
+    "async": "~0.2.10"
   },
   "devDependencies": {
-    "nodeunit": "0.8.4"  
-  } 
+    "nodeunit": "0.8.4"
+  }
 }

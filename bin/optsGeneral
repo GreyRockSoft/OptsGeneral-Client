@@ -2,5 +2,9 @@
 
 var optsGeneral = require('../');
 
-
-console.log(JSON.stringify(optsGeneral.info.serverInfo(), null, 2));
+optsGeneral.info.serverInfo(function (err, result){
+  if(err) {
+    console.log("Failed to get system details.");
+  }
+  console.log(JSON.stringify(result, null, 2));
+});
