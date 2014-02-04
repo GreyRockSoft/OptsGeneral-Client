@@ -1,5 +1,10 @@
 #!/usr/bin/env node
 
+//Check for sudo access
+if(process.getuid() !== 0) {
+  console.warn('Warning: You do not have sudo access.  Some system modification may not perform correctly.');
+}
+
 var optsGeneral = require('../');
 
 optsGeneral.info.serverInfo(function (err, result){
@@ -7,4 +12,13 @@ optsGeneral.info.serverInfo(function (err, result){
     console.log("Failed to get system details.");
   }
   console.log(JSON.stringify(result, null, 2));
+});
+
+optsGeneral.users.addUser({name: 'Test'}, function(err) {
+  if(err) {
+    console.log('Failed to create user');
+  }
+  else {
+    console.log('Created user Test');
+  }
 });
