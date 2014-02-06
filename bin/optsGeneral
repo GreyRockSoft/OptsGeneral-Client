@@ -14,7 +14,7 @@ optsGeneral.info.serverInfo(function (err, result){
   console.log(JSON.stringify(result, null, 2));
 });
 
-optsGeneral.users.addUser({name: 'Test'}, function(err) {
+optsGeneral.users.addUser({name: 'test', password:'test'}, function(err) {
   if(err) {
     console.log('Failed to create user');
   }
