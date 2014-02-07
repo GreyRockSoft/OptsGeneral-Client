@@ -21,4 +21,6 @@ optsGeneral.users.addUser({name: 'test', password:'test'}, function(err) {
   else {
     console.log('Created user Test');
   }
+
 });
+
