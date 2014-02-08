@@ -14,6 +14,7 @@ optsGeneral.info.serverInfo(function (err, result){
   console.log(JSON.stringify(result, null, 2));
 });
 
+/*
 optsGeneral.users.addUser({name: 'test', password:'test'}, function(err) {
   if(err) {
     console.log('Failed to create user');
@@ -22,5 +23,16 @@ optsGeneral.users.addUser({name: 'test', password:'test'}, function(err) {
     console.log('Created user Test');
   }
 
+});
+
+*/
+
+optsGeneral.file.writeFile('./test', 'This is a test', {perm: 0755}, function(err) {
+  if(err) {
+    console.error(err);
+  }
+  else {
+    console.log('It worked!');
+  }
 });
 
