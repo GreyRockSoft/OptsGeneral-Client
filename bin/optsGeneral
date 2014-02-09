@@ -6,6 +6,15 @@ if(process.getuid() !== 0) {
 }
 
 var optsGeneral = require('../');
+
+optsGeneral.service.service('nginx', 'status', function(err) {
+  if(err) {
+    console.error(err);
+  }
+  else {
+    console.log('Started nginx.');
+  }
+});
 /*
 optsGeneral.info.serverInfo(function (err, result){
   if(err) {
@@ -33,7 +42,6 @@ optsGeneral.users.addUser({name: 'test', password:'test'}, function(err) {
   }
 });
 
-*/
 
 optsGeneral.template.template('template.tmpl', 'rendered', {myValue: 'Yay!'}, {owner: 'test'}, function(err) {
   if(err) {
@@ -43,6 +51,7 @@ optsGeneral.template.template('template.tmpl', 'rendered', {myValue: 'Yay!'}, {o
     console.log('Created the template');
   }
 });
+ */
 
 
 
