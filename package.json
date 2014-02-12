@@ -2,14 +2,14 @@
   "name": "OptsGeneral-Client",
   "version": "0.0.1",
   "description": "Automating dev opts with node.",
-  "main": "service.js",
+  "main": "./bin/optsGeneral.js",
   "bin":{"optsGeneralClient": "./bin/optsGeneral.js"},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/GreyRockSoft/OptsGeneral.git"
+    "url": "https://github.com/GreyRockSoft/OptsGeneral-Client.git"
   },
   "author": "Ryan Moore",
   "license": "Apache 2",
