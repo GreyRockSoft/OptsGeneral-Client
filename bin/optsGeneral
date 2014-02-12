@@ -7,6 +7,25 @@ if(process.getuid() !== 0) {
 
 var optsGeneral = require('../');
 
+optsGeneral.package.update({},function(err) {
+  if(err) {
+    console.error(err);
+  }
+  else {
+    console.log('Installed sl');
+  }
+});
+/*
+optsGeneral.package.install('sl',{},  function(err) {
+  if(err) {
+    console.error(err);
+  }
+  else {
+    console.log('Installed sl');
+  }
+});
+
+/*
 optsGeneral.service.service('nginx', 'status', function(err) {
   if(err) {
     console.error(err);
@@ -15,16 +34,17 @@ optsGeneral.service.service('nginx', 'status', function(err) {
     console.log('Started nginx.');
   }
 });
-/*
+
+
 optsGeneral.info.serverInfo(function (err, result){
   if(err) {
     console.log("Failed to get system details.");
   }
   console.log(JSON.stringify(result, null, 2));
 });
-*/
 
-/*
+
+
 optsGeneral.users.addUser({name: 'test', password:'test'}, function(err) {
   if(err) {
     console.log('Failed to create user');
