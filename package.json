@@ -1,6 +1,6 @@
 {
   "name": "OptsGeneral-Client",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "description": "Automating dev opts with node.",
   "main": "service.js",
   "bin": {
