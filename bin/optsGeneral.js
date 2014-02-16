@@ -16,11 +16,13 @@ function loadGeneralFile(fileName) {
 }
 
 var fs = require('fs');
+var path = require('path');
 var optsGeneral = require('../');
 
 //search for the genearl.js file and execute it
 
-var general = require('./general.js');
+var generalPath =  path.resolve('general.js');
+var general = require(generalPath);
 if(general) {
   general(optsGeneral);
 }
