@@ -10,7 +10,6 @@ function loadGeneralFile(fileName) {
     return require(fileName);
   }
   catch (e) {
-    console.log('Could not load: ' + fileName);
     return undefined;
   }
 }
@@ -22,7 +21,7 @@ var optsGeneral = require('../');
 //search for the genearl.js file and execute it
 
 var generalPath =  path.resolve('general.js');
-var general = require(generalPath);
+var general = loadGeneralFile(generalPath);
 if(general) {
   general(optsGeneral);
 }
