@@ -52,4 +52,4 @@ module.exports = function(general) {
 ```
 
 ## Run
-Once you have your general.js file you can now use the `optGeneralClient` to execute it.  To do this run `optGeneralClient` from the directory that your general.js file is located.
+Once you have your general.js file you can now use the `optGeneralClient` to execute it.  To do this run `optGeneralClient` from the directory that your general.js file is located. #Note:# come commands require `sudo` access.  If you do not run `optGeneralClient` as `sudo` some commands will not work and the run will fail. 
