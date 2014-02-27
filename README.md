@@ -1,6 +1,8 @@
 OptsGeneral-Client
 ===========
 
+## Install
+
 To install clone the repository and install it with npm.  This will allow you to use the client from the cli.
 
 `$ sudo npm install OptsGeneral-Client -g`
@@ -48,3 +50,6 @@ module.exports = function(general) {
 };
 
 ```
+
+## Run
+Once you have your general.js file you can now use the `optGeneralClient` to execute it.  To do this run `optGeneralClient` from the directory that your general.js file is located.
